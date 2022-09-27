@@ -1,0 +1,96 @@
+@import "https://fonts.googleapis.com/css?family=Oswald";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 100%;
+  padding: 50px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.key {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 0 10px #fff;
+  /* gradienet button */
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+kbd {
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #fff;
+  text-align: center;
+  margin: 0 10px;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.container .grid-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.key .sound {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .container .grid-box {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
